@@ -1,0 +1,39 @@
+.fn-clear(){
+   &:after{
+        content: '';
+        display: block;
+        height: 0;
+        overflow: hidden;
+   }
+}
+//圆角函数
+.fn-border-radius(@x1,@x2,@x3,@x4){
+    &{
+        border-radius: @x1 @x2 @x3 @x4;
+    }
+}
+//溢出隐藏函数
+.fn-text-overflow(@w){
+    width: @w;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+//外阴影
+.fn-box-shadow(@x1,@x2,@x3,@x4){
+    box-shadow: @x1 @x2 @x3 rgba(0,0,0,@x4);
+}
+//边框
+.fn-border(@x1,@x2,@x3,@x4,@x5){
+    border-width: @x1 @x2 @x3 @x4;
+    border-color: @x5;
+    border-style: solid;
+}
+.fn-iconfont(@bgColor){
+    background-color: @bgColor;
+}
+.fn-whb(@x1,@x2,@x3){
+    width: @x1;
+    height: @x2;
+    background-color: @x3;
+}
