@@ -1,0 +1,64 @@
+Github与git
+
+大家第一次安装git， 安装完成后，还需要配置邮箱，用户名:
+
+git config --global user.email '你的邮箱'
+git config --global user.name '你的用户名'
+
+
+如果出现git不是内部或外部命令，就需要找到git的安装目录，复制git里面的bin目录路径：C:\Program Files\Git\bin
+
+打开环境变量，找到Administrator的变量里面的PATH  ----> 再把你刚刚复制的路径粘贴进去  ----> 点击确定  ----> 关掉CMD控制台，再重新打开，这个时候就可以运行git了
+
+
+
+
+1. 在github上创建一个仓库
+2. 需要把你刚刚创建的仓库，使用git clone 这个命令来下载到本地
+
+3. 把你需要上传的文件复制到仓库文件夹里面去
+4. 把当前的目录，切换到仓库目录去
+
+4-1.在修改本地仓库的代码的时候，一定要执行git pull (更新)
+4. git add .     把你新增的文件或者是修改的文件添加到暂存区
+5. git commit -m '注释'     给你当前的这次提交加个备注
+6. git push    上传   
+
+
+把你的仓库代码，通过一个地址来访问，点入settings, 找到githubPages ,在选择你需要显示的分支，然后点击保存。
+
+
+为什么会有分支：
+就是为了解决多人协同开发的时候，代码会出现冲突
+
+
+1. 如何新建一个分支
+
+命令： git branch 分支名
+
+
+2. 分支新建好了，在切换过去
+
+切换分支的命令： git checkout 分支名
+
+3. 分支代码修改之后，就可以提交上去了。查看相应的效果
+
+执行代码提交的命令： 01--> git add .  02---> git commit -m '注释'  03---> git push
+
+
+4. 查看刚刚修改好的分支的效果。。。
+
+5. 分支代码修改好之后，就可以把它合并到master分支上去 
+
+在合并到master分支上去之前，首先得把当前的分支，切换到master分支上。
+命令： git checkout master
+
+然后在执行合并分支的命令：
+
+命令： git merge dev_about
+
+
+合并后，还得执行提交的操作：
+git add .
+git commit -m '注释'
+git push
