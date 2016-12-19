@@ -38,8 +38,8 @@ function ajax(callback){
 			var d = res.data;
 			var html = '';
 			$.each(d, function(i,ele) {
-				html += '<li><a class="rect" href="http://item.jd.com/'+ele.spu;
-				html += '.html"><div class="left"><img src="img/load.jpg" change="http://img13.360buyimg.com/n1/s80x80_'+ele.img+'"/></div>';
+				html += '<li><a class="rect" href="https://item.jd.com/'+ele.spu;
+				html += '.html"><div class="left"><img src="img/load.jpg" change="https://img13.360buyimg.com/n1/s80x80_'+ele.img+'"/></div>';
 				html +='<div class="right"><p>'+ ele.t.substr(0,8) +'</p><p>'+ ele.t +'</p>';
 				html+='<p><span class="pri"><b class="pri1">'+ele.jp+'元</b>门市价:'+ parseInt(ele.jp)*2+
 				'元</span><span class="xiaoliang">已售'+ele.c3+'</span></p></div></a></li>';
