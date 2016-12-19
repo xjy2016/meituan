@@ -30,7 +30,7 @@ ajax(showImg)
 function ajax(callback){
 	$.ajax({
 		url:'https://diviner.jd.com/diviner?p=610009&uuid=12396477&lid='+(i-1)*15+1+'&lim='+i*15+'&cb=tempGuessLikeCallback',
-		dataType:'jsonp',
+		dataType:'json',
 		jsonp:'callback',
 		scriptCharset:"gb2312",
 		jsonpCallback:'tempGuessLikeCallback',
